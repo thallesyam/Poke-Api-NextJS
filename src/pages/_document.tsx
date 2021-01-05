@@ -32,7 +32,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang>
+      <Html>
         <Head></Head>
         <body>
           <Main />
