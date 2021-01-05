@@ -149,7 +149,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 
 export const getStaticProps: GetStaticProps = async ( context ) => {
-  const { name } = context.params
+  const { name }: any = context.params
   
   const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${ name }`)
   const data = await res.data
