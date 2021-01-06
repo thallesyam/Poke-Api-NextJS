@@ -1,9 +1,25 @@
-import Home from '../components/Home'
+import Link from 'next/link'
 
-const IndexPage = () => (
-  <>
-    <Home />
-  </>
-)
+import { Container } from './styled'
 
-export default IndexPage
+const Home = () => {
+  
+  return (
+    <>
+      <Container>
+
+        <h1>Bem vindo à Pokedéx <br />  Next JS</h1>
+        <p>Para acessar todos os pokemons clique no botão</p>
+
+        <Link href="/pokedex">
+          <a> 
+            Acessar  
+          </a>
+        </Link>
+
+      </Container>
+    </>
+  )
+}
+
+export default Home
