@@ -3,7 +3,7 @@ import axios from 'axios'
 //Tipagem
 import { GetStaticProps, GetStaticPaths } from 'next' 
 
-import { Container, ImageContainer, InfoContainer, Icons, Info, Image, Back, Hearth, Types, Ability } from './styled'
+import { Container, ImageContainer, InfoContainer, Icons, Info, Image, Back, Hearth, Types, Ability } from '../../../../components/styles/pokemon/styled'
 import { useRouter } from 'next/router'
 
 import { PokePaths, Pokemon } from '../../../interfaces/index'
@@ -12,12 +12,11 @@ import Link from 'next/link';
 const PokemonData = ({ pokemon }: PokePaths) => {
   const baseImgUrl = 'https://pokeres.bastionbot.org/images/pokemon/'
   const { isFallback } = useRouter()
-
-  console.log(pokemon.stats[0].base_stat)
   
   if( isFallback ) {
     return <p>Carregando...</p>
   }
+
 
   let idFormated = '#00${pokemon.id}'
   let colorbg = 'all'

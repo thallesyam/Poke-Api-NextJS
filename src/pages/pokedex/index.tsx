@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { Container, StyledLink, Btn } from './styled'
+import { Container, StyledLink, Btn } from '../../../components/styles/pokedex/styled'
 
 import { Pokemon, Pokemons } from '../../interfaces'
 import Link from 'next/link'

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Container } from './styled'
+import { Container } from '../../components/styles/home/styled'
 
 const Home = () => {
   
